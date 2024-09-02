@@ -1,0 +1,11 @@
+.Xil
+xsim.dir
+xsim.covdb
+xsim_coverage_report
+*.pb
+*.joe
+*.jou
+*.str
+*.log
+*.wdb
+
