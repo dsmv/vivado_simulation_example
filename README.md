@@ -180,3 +180,10 @@ View of the Vivado window with the result of the randomize test simulation.
 
 ![](doc/vivado.png)
 
+
+## Conclusion
+
+The presented modeling path allows you to quickly detect errors in the source code at the stage of compilation or assembly of the project. Allows you to run the same tests in the command line mode or in the GUI mode. Allows you to make a group launch of tests.
+
+A similar modeling path for the Icarus and Questa simulators is presented in the project:
+https://github.com/dsmv/2023-lalambda-fpga-labs/tree/main/lab_day3_02_schoolrisc
