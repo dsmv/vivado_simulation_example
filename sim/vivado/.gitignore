@@ -8,4 +8,6 @@ xsim_coverage_report
 *.str
 *.log
 *.wdb
+*.vcd
+
 
