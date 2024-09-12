@@ -13,7 +13,7 @@ module tb
    "direct" 
   };
   
-initial begin
+initial begin  : create_time_diagram
   $dumpfile("dump.vcd");
   $dumpvars(2);
 end
@@ -81,7 +81,7 @@ logic [7:0]         q_data  [$];
 
 real               cv_all;
 
-always #5 clk = ~clk;
+always #5 clk = ~clk; 
 
 // Unit under test
 user_axis  
@@ -97,7 +97,7 @@ uut
 bind user_axis   bind_user_axis #( .n ( n ) )   dut(.*); 
 
 
-initial begin
+initial begin : check_timeout
     #100000;
     $display( "Timeout");
     test_timeout = '1;
@@ -105,7 +105,7 @@ end
 
 
 // Main process  
-initial begin  
+initial begin  : main_process
 
     automatic int args=-1;
     
@@ -159,7 +159,7 @@ end
 always @(posedge clk ) cv_all = $get_coverage();
 
 // Generate test sequence 
-initial begin
+initial begin : generate_test_sequence
 
     @(posedge clk iff test_start=='1);
         
@@ -240,7 +240,7 @@ always @(posedge clk)
   end  
 
 // Generate for out_tready signal
-always @(posedge clk)
+always @(posedge clk) 
   if( out_ready_cnt>0 ) begin
       out_ready_cnt--;
       if( 0==out_ready_cnt )

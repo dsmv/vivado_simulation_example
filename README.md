@@ -12,6 +12,14 @@ Features:
 Examples are taken from the DigitalDesignSchool repository:
 https://github.com/DigitalDesignSchool/ce2020labs/tree/master/next_step/dsmv
 
+## Examples 
+
+| __Name__ | __Description__ 
+| ------      | ----
+| [tb_01](doc/tb_01.md)     | simple example
+| [tb_02](doc/tb_02.md)     | add virtual interface
+
+
 ## Preparing Visual Studio Code
 
 Install Visual Studio Code and TerosHDL and surfer extensions
