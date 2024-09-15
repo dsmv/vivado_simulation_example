@@ -11,6 +11,15 @@
 
 Примеры взяты репозитория DigitalDesignSchool: https://github.com/DigitalDesignSchool/ce2020labs/tree/master/next_step/dsmv
 
+## Примеры
+
+| __Name__ | __Description__ 
+| ------      | ----
+| [tb_01](doc/tb_01_rus.md)     | Базовый пример
+| [tb_02](doc/tb_02_rus.md)     | Использование виртуальных интерфейсов
+
+
+
 ## Подготовка Visual Studio Code
 
 Установите Visul Studio Code и расширения TerosHDL и surfer
